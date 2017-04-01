@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB520FEC1E8D1582009FFBD2 /* HHRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB520FEB1E8D1582009FFBD2 /* HHRouter.m */; };
+		AB520FEF1E8D15EB009FFBD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB520FEE1E8D15EB009FFBD2 /* UIKit.framework */; };
+		AB520FF11E8D15F5009FFBD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB520FF01E8D15F5009FFBD2 /* Foundation.framework */; };
+		AB520FF41E8D1693009FFBD2 /* RoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB520FF31E8D1693009FFBD2 /* RoutViewController.m */; };
 		ABFA60E11E2607CB001ED831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA60E01E2607CB001ED831 /* main.m */; };
 		ABFA60E41E2607CB001ED831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA60E31E2607CB001ED831 /* AppDelegate.m */; };
 		ABFA60E71E2607CB001ED831 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA60E61E2607CB001ED831 /* ViewController.m */; };
@@ -15,6 +19,7 @@
 		ABFA60EF1E2607CB001ED831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFA60ED1E2607CB001ED831 /* LaunchScreen.storyboard */; };
 		ABFA60FA1E2607CB001ED831 /* AnnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA60F91E2607CB001ED831 /* AnnimationTests.m */; };
 		ABFA61051E2607CB001ED831 /* AnnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA61041E2607CB001ED831 /* AnnimationUITests.m */; };
+		F52E16F3F8AAF75576334D31 /* libPods-Annimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2898FF079C23D41A28135AD /* libPods-Annimation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FA32F86327E55F921D0BF9A /* Pods-Annimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Annimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Annimation/Pods-Annimation.debug.xcconfig"; sourceTree = "<group>"; };
+		A2898FF079C23D41A28135AD /* libPods-Annimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Annimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB520FEA1E8D1582009FFBD2 /* HHRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRouter.h; sourceTree = "<group>"; };
+		AB520FEB1E8D1582009FFBD2 /* HHRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRouter.m; sourceTree = "<group>"; };
+		AB520FEE1E8D15EB009FFBD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB520FF01E8D15F5009FFBD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB520FF21E8D1693009FFBD2 /* RoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutViewController.h; sourceTree = "<group>"; };
+		AB520FF31E8D1693009FFBD2 /* RoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutViewController.m; sourceTree = "<group>"; };
 		ABFA60DC1E2607CB001ED831 /* Annimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Annimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFA60E01E2607CB001ED831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABFA60E21E2607CB001ED831 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 		ABFA61001E2607CB001ED831 /* AnnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFA61041E2607CB001ED831 /* AnnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnimationUITests.m; sourceTree = "<group>"; };
 		ABFA61061E2607CB001ED831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C813B0A2FED27C5B86A38F03 /* Pods-Annimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Annimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Annimation/Pods-Annimation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB520FF11E8D15F5009FFBD2 /* Foundation.framework in Frameworks */,
+				AB520FEF1E8D15EB009FFBD2 /* UIKit.framework in Frameworks */,
+				F52E16F3F8AAF75576334D31 /* libPods-Annimation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		886A7391F42607655816AD45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FA32F86327E55F921D0BF9A /* Pods-Annimation.debug.xcconfig */,
+				C813B0A2FED27C5B86A38F03 /* Pods-Annimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB520FE91E8D1582009FFBD2 /* HHRouter */ = {
+			isa = PBXGroup;
+			children = (
+				AB520FEA1E8D1582009FFBD2 /* HHRouter.h */,
+				AB520FEB1E8D1582009FFBD2 /* HHRouter.m */,
+			);
+			path = HHRouter;
+			sourceTree = "<group>";
+		};
+		AB520FED1E8D15EB009FFBD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB520FF01E8D15F5009FFBD2 /* Foundation.framework */,
+				AB520FEE1E8D15EB009FFBD2 /* UIKit.framework */,
+				A2898FF079C23D41A28135AD /* libPods-Annimation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ABFA60D31E2607CB001ED831 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +130,8 @@
 				ABFA60F81E2607CB001ED831 /* AnnimationTests */,
 				ABFA61031E2607CB001ED831 /* AnnimationUITests */,
 				ABFA60DD1E2607CB001ED831 /* Products */,
+				AB520FED1E8D15EB009FFBD2 /* Frameworks */,
+				886A7391F42607655816AD45 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +148,13 @@
 		ABFA60DE1E2607CB001ED831 /* Annimation */ = {
 			isa = PBXGroup;
 			children = (
+				AB520FE91E8D1582009FFBD2 /* HHRouter */,
 				ABFA60E21E2607CB001ED831 /* AppDelegate.h */,
 				ABFA60E31E2607CB001ED831 /* AppDelegate.m */,
 				ABFA60E51E2607CB001ED831 /* ViewController.h */,
 				ABFA60E61E2607CB001ED831 /* ViewController.m */,
+				AB520FF21E8D1693009FFBD2 /* RoutViewController.h */,
+				AB520FF31E8D1693009FFBD2 /* RoutViewController.m */,
 				ABFA60E81E2607CB001ED831 /* Main.storyboard */,
 				ABFA60EB1E2607CB001ED831 /* Assets.xcassets */,
 				ABFA60ED1E2607CB001ED831 /* LaunchScreen.storyboard */,
@@ -147,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABFA61091E2607CB001ED831 /* Build configuration list for PBXNativeTarget "Annimation" */;
 			buildPhases = (
+				03528F919211AF94BF102FD0 /* [CP] Check Pods Manifest.lock */,
 				ABFA60D81E2607CB001ED831 /* Sources */,
 				ABFA60D91E2607CB001ED831 /* Frameworks */,
 				ABFA60DA1E2607CB001ED831 /* Resources */,
+				B4DD97369F453AFE029B0ADE /* [CP] Embed Pods Frameworks */,
+				3BE05066D90CCE048FF660C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +321,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03528F919211AF94BF102FD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3BE05066D90CCE048FF660C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Annimation/Pods-Annimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4DD97369F453AFE029B0ADE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Annimation/Pods-Annimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABFA60D81E2607CB001ED831 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,7 +376,9 @@
 			files = (
 				ABFA60E71E2607CB001ED831 /* ViewController.m in Sources */,
 				ABFA60E41E2607CB001ED831 /* AppDelegate.m in Sources */,
+				AB520FEC1E8D1582009FFBD2 /* HHRouter.m in Sources */,
 				ABFA60E11E2607CB001ED831 /* main.m in Sources */,
+				AB520FF41E8D1693009FFBD2 /* RoutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,9 +523,11 @@
 		};
 		ABFA610A1E2607CB001ED831 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FA32F86327E55F921D0BF9A /* Pods-Annimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Annimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xfzd.Annimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,9 +536,11 @@
 		};
 		ABFA610B1E2607CB001ED831 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C813B0A2FED27C5B86A38F03 /* Pods-Annimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Annimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xfzd.Annimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +612,7 @@
 				ABFA610B1E2607CB001ED831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABFA610C1E2607CB001ED831 /* Build configuration list for PBXNativeTarget "AnnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +621,7 @@
 				ABFA610E1E2607CB001ED831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABFA610F1E2607CB001ED831 /* Build configuration list for PBXNativeTarget "AnnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +630,7 @@
 				ABFA61111E2607CB001ED831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

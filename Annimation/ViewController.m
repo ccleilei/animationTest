@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "HHRouter.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSArray* titles;
@@ -15,7 +15,9 @@
 @end
 
 @implementation ViewController
-
++(void)load{
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +26,7 @@
     table.delegate=self;
     table.dataSource=self;
     [self.view addSubview:table];
+    [self.navigationController pushViewController:[[HHRouter shared] matchController:@"test//:rout"] animated:YES];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
