@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - HHRouter (0.1.9)
+  - MGJRouter (0.9.3)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -26,13 +27,15 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - HHRouter (~> 0.1.9)
+  - MGJRouter (~> 0.9.3)
   - ReactiveCocoa (~> 2.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   HHRouter: c096524e95a07a1970e6e23a19ee5a9592dc326d
+  MGJRouter: f65821e2aeffc8f9e84b254c8f1c0dd80f048aa9
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-PODFILE CHECKSUM: 8e2e2e7699c83d3c4ea9f542bc359d9809d7f68e
+PODFILE CHECKSUM: a303d1eff865e19db47eea5df680767200e6da35
 
 COCOAPODS: 1.2.0

@@ -15,9 +15,6 @@
 @end
 
 @implementation ViewController
-+(void)load{
-    
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -26,6 +23,7 @@
     table.delegate=self;
     table.dataSource=self;
     [self.view addSubview:table];
+
     [self.navigationController pushViewController:[[HHRouter shared] matchController:@"test//:rout"] animated:YES];
 }
 

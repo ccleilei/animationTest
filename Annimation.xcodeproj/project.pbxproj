@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB520FEC1E8D1582009FFBD2 /* HHRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB520FEB1E8D1582009FFBD2 /* HHRouter.m */; };
+		AB3DA5231E94F30E003C9D6D /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3DA5221E94F30E003C9D6D /* CTMediator.m */; };
 		AB520FEF1E8D15EB009FFBD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB520FEE1E8D15EB009FFBD2 /* UIKit.framework */; };
 		AB520FF11E8D15F5009FFBD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB520FF01E8D15F5009FFBD2 /* Foundation.framework */; };
 		AB520FF41E8D1693009FFBD2 /* RoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB520FF31E8D1693009FFBD2 /* RoutViewController.m */; };
@@ -42,8 +42,8 @@
 /* Begin PBXFileReference section */
 		6FA32F86327E55F921D0BF9A /* Pods-Annimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Annimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Annimation/Pods-Annimation.debug.xcconfig"; sourceTree = "<group>"; };
 		A2898FF079C23D41A28135AD /* libPods-Annimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Annimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB520FEA1E8D1582009FFBD2 /* HHRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRouter.h; sourceTree = "<group>"; };
-		AB520FEB1E8D1582009FFBD2 /* HHRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRouter.m; sourceTree = "<group>"; };
+		AB3DA5211E94F30E003C9D6D /* CTMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMediator.h; sourceTree = "<group>"; };
+		AB3DA5221E94F30E003C9D6D /* CTMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMediator.m; sourceTree = "<group>"; };
 		AB520FEE1E8D15EB009FFBD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB520FF01E8D15F5009FFBD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB520FF21E8D1693009FFBD2 /* RoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutViewController.h; sourceTree = "<group>"; };
@@ -104,14 +104,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		AB520FE91E8D1582009FFBD2 /* HHRouter */ = {
+		AB3DA5201E94F30E003C9D6D /* CTMediator */ = {
 			isa = PBXGroup;
 			children = (
-				AB520FEA1E8D1582009FFBD2 /* HHRouter.h */,
-				AB520FEB1E8D1582009FFBD2 /* HHRouter.m */,
+				AB3DA5211E94F30E003C9D6D /* CTMediator.h */,
+				AB3DA5221E94F30E003C9D6D /* CTMediator.m */,
 			);
-			path = HHRouter;
-			sourceTree = "<group>";
+			path = CTMediator;
+			sourceTree = SOURCE_ROOT;
 		};
 		AB520FED1E8D15EB009FFBD2 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -148,7 +148,7 @@
 		ABFA60DE1E2607CB001ED831 /* Annimation */ = {
 			isa = PBXGroup;
 			children = (
-				AB520FE91E8D1582009FFBD2 /* HHRouter */,
+				AB3DA5201E94F30E003C9D6D /* CTMediator */,
 				ABFA60E21E2607CB001ED831 /* AppDelegate.h */,
 				ABFA60E31E2607CB001ED831 /* AppDelegate.m */,
 				ABFA60E51E2607CB001ED831 /* ViewController.h */,
@@ -375,8 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABFA60E71E2607CB001ED831 /* ViewController.m in Sources */,
+				AB3DA5231E94F30E003C9D6D /* CTMediator.m in Sources */,
 				ABFA60E41E2607CB001ED831 /* AppDelegate.m in Sources */,
-				AB520FEC1E8D1582009FFBD2 /* HHRouter.m in Sources */,
 				ABFA60E11E2607CB001ED831 /* main.m in Sources */,
 				AB520FF41E8D1693009FFBD2 /* RoutViewController.m in Sources */,
 			);
