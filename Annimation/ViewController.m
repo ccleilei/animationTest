@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "HHRouter.h"
+#import "RacViewController.h"
+#import "ViewControllerModel.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSArray* titles;
@@ -18,7 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-   titles=[NSArray arrayWithObjects:@"事件响应",@"路由",@"animation", nil];
+    VIewModel=[[ViewControllerModel alloc] init];
+    VIewModel.tableData=[NSArray arrayWithObjects:@"rac",@"事件响应",@"路由",@"animation", nil];
     UITableView* table=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.view.bounds.size.height) style:UITableViewStylePlain];
     table.delegate=self;
     table.dataSource=self;
@@ -31,18 +34,20 @@
     return 80;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return titles.count;
+    return VIewModel.tableData.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
     cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text=[titles objectAtIndex:indexPath.row];
+    cell.textLabel.text=[VIewModel.tableData objectAtIndex:indexPath.row];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    [VIewModel tableSelectTable:indexPath compelte:^(UIViewController *controller) {
+        [self.navigationController pushViewController:controller animated:YES];
+    }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

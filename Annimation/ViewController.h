@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ViewControllerModel.h"
 @interface ViewController : UIViewController
-
-
+{
+    ViewControllerModel* VIewModel;
+}
 @end
 

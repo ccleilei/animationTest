@@ -11,6 +11,8 @@
 		AB520FEF1E8D15EB009FFBD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB520FEE1E8D15EB009FFBD2 /* UIKit.framework */; };
 		AB520FF11E8D15F5009FFBD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB520FF01E8D15F5009FFBD2 /* Foundation.framework */; };
 		AB520FF41E8D1693009FFBD2 /* RoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB520FF31E8D1693009FFBD2 /* RoutViewController.m */; };
+		ABEFA0F81E963A01002AF545 /* ViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEFA0F71E963A01002AF545 /* ViewControllerModel.m */; };
+		ABF412B31E961FD2007910B9 /* RacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF412B21E961FD2007910B9 /* RacViewController.m */; };
 		ABFA60E11E2607CB001ED831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA60E01E2607CB001ED831 /* main.m */; };
 		ABFA60E41E2607CB001ED831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA60E31E2607CB001ED831 /* AppDelegate.m */; };
 		ABFA60E71E2607CB001ED831 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA60E61E2607CB001ED831 /* ViewController.m */; };
@@ -48,6 +50,10 @@
 		AB520FF01E8D15F5009FFBD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB520FF21E8D1693009FFBD2 /* RoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutViewController.h; sourceTree = "<group>"; };
 		AB520FF31E8D1693009FFBD2 /* RoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutViewController.m; sourceTree = "<group>"; };
+		ABEFA0F61E963A01002AF545 /* ViewControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerModel.h; sourceTree = "<group>"; };
+		ABEFA0F71E963A01002AF545 /* ViewControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerModel.m; sourceTree = "<group>"; };
+		ABF412B11E961FD2007910B9 /* RacViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacViewController.h; sourceTree = "<group>"; };
+		ABF412B21E961FD2007910B9 /* RacViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacViewController.m; sourceTree = "<group>"; };
 		ABFA60DC1E2607CB001ED831 /* Annimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Annimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFA60E01E2607CB001ED831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABFA60E21E2607CB001ED831 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,8 +159,12 @@
 				ABFA60E31E2607CB001ED831 /* AppDelegate.m */,
 				ABFA60E51E2607CB001ED831 /* ViewController.h */,
 				ABFA60E61E2607CB001ED831 /* ViewController.m */,
+				ABEFA0F61E963A01002AF545 /* ViewControllerModel.h */,
+				ABEFA0F71E963A01002AF545 /* ViewControllerModel.m */,
 				AB520FF21E8D1693009FFBD2 /* RoutViewController.h */,
 				AB520FF31E8D1693009FFBD2 /* RoutViewController.m */,
+				ABF412B11E961FD2007910B9 /* RacViewController.h */,
+				ABF412B21E961FD2007910B9 /* RacViewController.m */,
 				ABFA60E81E2607CB001ED831 /* Main.storyboard */,
 				ABFA60EB1E2607CB001ED831 /* Assets.xcassets */,
 				ABFA60ED1E2607CB001ED831 /* LaunchScreen.storyboard */,
@@ -379,6 +389,8 @@
 				ABFA60E41E2607CB001ED831 /* AppDelegate.m in Sources */,
 				ABFA60E11E2607CB001ED831 /* main.m in Sources */,
 				AB520FF41E8D1693009FFBD2 /* RoutViewController.m in Sources */,
+				ABF412B31E961FD2007910B9 /* RacViewController.m in Sources */,
+				ABEFA0F81E963A01002AF545 /* ViewControllerModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
