@@ -34,7 +34,7 @@
     [loginBn setBackgroundColor:[UIColor grayColor]] ;
     [self.view addSubview:loginBn];
    // [self CombinRAC];
-    [self flatenMap];
+    [self racMap];
 }
 
 -(void)clickLog{
