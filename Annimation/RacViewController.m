@@ -34,12 +34,38 @@
     [loginBn setBackgroundColor:[UIColor grayColor]] ;
     [self.view addSubview:loginBn];
    // [self CombinRAC];
-    [self racMap];
+    [self contact];
 }
+//bind 订阅原信号 在nextBlick根据bock装换成新信号并订阅 在新订阅的NextBlock中将指传递给新的subscriber，并调用sendnext
 
+//将信号前后衔接起来 订阅原信号在complete block里面订阅2信号
+-(void)contact{
+    RACSignal* signal1=[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [subscriber sendNext:@"1"];
+       
+       return [RACDisposable disposableWithBlock:^{
+           
+       }];
+    }];
+    
+    RACSignal* signal2=[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [subscriber sendNext:@"2"];
+        [subscriber sendNext:@"3"];
+        [subscriber sendNext:@"4"];
+        [subscriber sendCompleted];
+        return [RACDisposable disposableWithBlock:^{
+            
+        }];
+    }];
+    [[signal1 concat: signal2] subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+}
+//zipWith 订阅信号1 订阅信号2 在nextblock中当存储值 当都有值是组合后传递给新signal的subscribe，并调用sendnext
 -(void)clickLog{
     NSLog(@"login");
 }
+
 -(void)racFilter{
     [[nameTextfield.rac_textSignal filter:^BOOL(id value) {
         NSString*str=value;
@@ -49,6 +75,7 @@
          NSLog(@"%@",x);
     }];
 }
+//map 底层调用flatenmap 底层bind 将blck里返回的值打包成新的同类型的singal返回
 -(void)racMap{
 //    [[racTextfield.rac_textSignal map:^id(NSString* value) {
 //        if (value.length>3) {
@@ -66,6 +93,22 @@
         return [UIColor whiteColor];
     }];
 }
+
+-(void)reduceeach{
+    RACSignal*signal=[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        return [RACDisposable disposableWithBlock:^{
+            
+        }];
+    }];
+    [signal reduceEach:^id(NSNumber *num1 , NSNumber *num2){
+        return @([num1 intValue]+[num2 intValue]);
+    }];
+
+    [signal not];
+}
+//reduceApply 参数为blck与参数 根据传入的blck和参数 整合结果
+
 -(void)racMerge{
     RACSignal* name=nameTextfield.rac_textSignal;
     RACSignal* pass=passTextfield.rac_textSignal;
@@ -107,7 +150,7 @@
         }
     ];
 }
--(void)flatenMap{
+-(void)RACSequencee{
     RACSequence *numbers=[@"1 2 3 4 5 6 7 8 9"componentsSeparatedByString:@" "].rac_sequence;
 
     RACSequence*new= [numbers flattenMap:^RACStream *(id value) {
